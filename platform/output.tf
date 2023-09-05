@@ -14,6 +14,10 @@ output "ecs_cluster_name" {
   value = aws_ecs_cluster.production-fargate-cluster.name
 }
 
+output "ecs_cluster_id" {
+  value = aws_ecs_cluster.production-fargate-cluster.id
+}
+
 output "ecs_cluster_role_name" {
   value = aws_iam_role.ecs_cluster_role.name
 }
